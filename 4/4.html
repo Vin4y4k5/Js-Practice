@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="./Favicon.png" type="image/x-icon">
+<title>JS Practice 4</title>
+  <style>
+
+    body{
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      height: 1000px;
+
+    }
+
+    input{
+      margin: 1vw 0vw 0vw 2vw;
+      padding: 1vw;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    button{
+      padding: 1vw 2vw;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    #tabs{
+      display: flex;
+      padding: 2vw;
+      gap: 1vw;
+    }
+
+    .tab{
+      padding: 1vw 2vw;
+      background-color: #e3e3e3;
+      border-radius: 0.5vw ;
+      border: 1px solid #7b7b7b;
+      font-weight: 600;
+    }
+
+    h3{
+      width: 50%;
+      margin-left: 2vw;
+      display: none;
+    }
+
+    textarea{
+      margin: 3vw;
+      position: absolute;
+      bottom: -10%;
+      padding: 1vw;
+      width: 50vw;
+      height: 10vw;
+      font-size: 1vw;
+      outline-color: royalblue;
+      resize: none;
+      border-radius: 1vw;
+    }
+
+    #bottom h4{
+      font-size: 1.5vw;
+      position: absolute;
+      bottom: 13%;
+      padding: 0.5vw 0;
+      margin: 3vw;
+    }
+
+    .progress-container {
+      width: 100%;
+      height: 0.5vw;
+      background-color: #f3f3f3;
+      position: absolute;
+      bottom: 25%;
+    }
+
+    .progress-bar {
+      height: 100%;
+      background-color: #4caf50;
+    }
+
+    @media (max-width:600px) {
+
+      #tabs{
+        margin-top: 2vw;
+      }
+
+      h3{
+        font-size: 4vw;
+        width: 100%;
+      }
+      
+      #home-text{
+        font-size: 3vw;
+      }
+
+      #bottom h4 , #bottom textarea{
+        font-size: 5vw;
+      }
+      
+      textarea{
+        bottom: -20%;
+        width: 85vw;
+        height: 50vw;
+      }
+
+    }
+        
+  </style>
+
+</head>
+<body>
+  <ul>
+    <li>apple</li>
+  </ul>
+  <input type="text" placeholder="add new item">
+  <button id="add">add</button>
+  <button id="remove">remove</button>
+
+  <div id="tabs">
+    <div id="home" class="tab">Home</div>
+    <div id="about" class="tab">About</div>
+    <div id="contact" class="tab">Contact</div>
+  </div>
+
+  <h3 id="home-text">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iste inventore excepturi eius quo id eum rem, tempora labore velit molestiae accusantium animi officiis nesciunt repellendus saepe a odio facilis. molestiae similique odit expedita accusantium optio quia corporis maiores facere quam.
+  </h3>
+
+  <h3 id="about-text">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo consectetur ipsum minima accusamus voluptas rem nihil aperiam laborum. Architecto tempora soluta aliquam nulla impedit repellendus voluptates est facilis, molestiae similique odit expedita accusantium optio quia corporis maiores facere quam. Culpa eligendi nihil aperiam facilis explicabo nobis, tempora, sequi accusantium veritatis ut quibusdam temporibus deserunt exercitationem saepe modi rem dolore voluptatibus dolorum harum ex maxime iure molestias. Vel exercitationem asperiores itaque illum vero adipisci ab similique aperiam enim maxime. Ullam a beatae non aspernatur. Ipsam minima hic eum dignissimos, vitae voluptates non iste repellendus et odio, eos atque eveniet id laboriosam!
+  </h3>
+
+  <h3 id="contact-text">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam repudiandae unde, obcaecati ratione eum expedita.
+  </h3>
+
+  <div id="bottom">
+    <h4>character count : <span id="counter">0</span></h4>
+  <textarea></textarea>
+  </div>
+
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+
+  <script src="4.js"></script>
+</body>
+</html>

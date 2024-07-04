@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./Favicon.png" type="image/x-icon">
+  <title>Js Practice 1</title>
+  <style>
+
+    #main{
+      height: 100%;
+      width: 100%;
+      
+    }
+
+    .js{
+      font-size: 5vw;
+      text-align: center;
+    }
+
+    .p{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 2vw;
+      width: fit-content;
+      text-align: center;
+      padding-left: 2vw;
+    }
+
+    #box{
+      height: 10vw;
+      width: 10vw;
+      background-color: red;
+      border: 1vw solid black;
+      animation-name: move;
+      animation-duration: 1s;
+      animation-timing-function: all linear ease;
+      animation-iteration-count: infinite;
+      margin-top: 5vw;
+      animation-direction: alternate;
+    }
+
+    @keyframes move{
+      from{
+        transform: translate(25%);
+      }
+
+      to{
+        transform: translate(300%) rotate(180deg);
+      }
+    }
+    
+    button{
+      margin-top: 5vw;
+      padding: 2vw 3vw;
+      font-size: 3vw;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      border: 1px solid black;
+      border-radius: 5vw;
+    }
+
+    button:hover{
+      background-color: rgb(210, 210, 210);
+    }
+
+  </style> 
+</head>
+<body>
+  <div id="main">
+  <h1 class="js">JavaScript Practice</h1>
+  <p class="p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+    Vitae, eveniet voluptates est quisquam modi enim accusamus <br>
+    veniam culpa sunt aperiam nihil, inventore id facilis velit <br>
+    saepe nobis? A, aliquam? Assumenda aspernatur odit deserunt, <br>
+    dicta quia sapiente quos quam amet eos non delectus, culpa <br>
+    optio impedit!
+  </p>
+  <h2 id="random">random</h2>
+  <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+  
+  <div id="box-s">
+    <div id="box"></div>
+  </div>
+
+  <button>click</button>
+
+  <div id="parent">
+    <button id="play" >play</button>
+    <button id="pause" >pause</button>
+  </div>
+  
+  <script src="1.js"></script>
+  </div>
+</body>
+</html>

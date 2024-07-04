@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./Images/Favicon.png" type="image/x-icon">
+  <title>JS Practice 3</title>
+
+  <style>
+
+    /* problem 2 */
+
+    body{
+      padding-left: 1vw;
+    }
+
+    p{
+      font-size: 1.5vw;
+      margin-left: 2vw;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    img{
+      width: 20vw;
+      margin: 2vw;
+    }
+
+    #click{
+      font-size: 2vw;
+      padding: 0.5vw 2vw;
+      margin-left: 2vw;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color:chartreuse;
+    }
+
+    #swap{
+      font-size: 2vw;
+      margin-top: 2vw;
+      padding: 0.5vw 2vw;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color:chartreuse;
+    }
+
+    form{
+      padding: 2vw;
+    }
+
+    form #input1 , form #input2 {
+      padding: 1vw 2vw;
+    }
+
+    form #submit{
+      padding: 1vw 2vw;
+    }
+
+    #time{
+      padding: 2vw;
+    }
+
+    #time button{
+      font-size: 1.5vw;
+      padding: 0.5vw 2vw;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color:chartreuse;
+    }
+
+    @media (max-width:600px) {
+
+    p{
+      font-size: 5vw;
+    }
+
+    img{
+      width: 40vw;
+      height: 40vw;
+      object-fit: cover;
+      margin: 2vw;
+    }
+
+    form{
+      padding: 2vw;
+    }
+
+    form input{
+      margin-bottom: 2vw;
+    }
+
+
+    #submit{
+      margin-right: 1vw;
+    }
+
+    #click{
+      font-size: 4vw;
+      margin-right: 5vw;
+      padding: 1vw 4vw;
+    }
+
+    #swap{
+      font-size: 4vw;
+      margin-right: 5vw;
+      padding: 1vw 4vw;
+    }
+
+    #time{
+      padding: 2vw;
+    }
+
+    #time button{
+      font-size: 5vw;
+      padding: 0.5vw 2vw;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color:chartreuse;
+    }
+
+    #start{
+      margin-right: 1vw;
+    }
+
+    #time h3{
+      font-size: 5vw;
+    }
+  }
+
+
+  </style>
+</head>
+<body>
+  <p>Lorem ipsum dolor sit amet.</p>
+  <button id="click">click</button>
+
+  <img id="one" src="./Images/1.avif" alt="">
+  <img id="two" src="./Images/2.avif" alt="">
+  <button id="swap">swap</button> 
+
+  <h4 id="error"></h4>
+  <form>
+    <input id="input1" type="text">
+    <input id="input2" type="text">
+    <input id="submit" type="submit">
+  </form>
+
+  <div id="time">
+    <h3>0</h3>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+  </div>
+
+  <script src="3.1.js"></script>
+  <script src="3.2.js"></script>
+
+</body>
+</html>
+
